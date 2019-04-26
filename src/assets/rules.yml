@@ -1,0 +1,860 @@
+
+- name: Basic Shots
+  children:
+    - name: Melee
+      pretext: > 
+        A melee shot is the most basic shot type.
+        <br><br>
+        It is performed by shooting the appropriate
+        piece with the controlling player’s finger
+        across the board and is meant
+        to simulate a hero or monster charging into
+        battle. An unmodified melee shot does one
+        point of damage. 
+
+    - name: Rush
+      pretext: >
+        A rush shot is performed exactly like a melee shot; however, no damage
+        is inflicted. The shot’s name suggests haste, thus
+        there is no opportunity to engage in hand-to-hand combat. 
+
+- name: Ranged Shots
+  children:
+
+    - name: Boulder
+      pretext: >
+        The boulder shot is a powerful ranged shots
+        that function identically to the missile shot; however, the
+        appropriate side of the large, orange piece is shot instead. 
+
+    - name: Fireball
+      pretext: >
+        A fireball shot is a ranged shot type that
+        behaves the same as a missile shot except
+        the fireball piece is shot instead. 
+
+    - name: Giant Fireball
+      pretext: >
+        The giant fireball shot is a powerful ranged shots
+        that function identically to the missile shot; however, the
+        appropriate side of the large, orange piece is shot instead. 
+
+    - name: Ice
+      pretext: >
+        Ice shots are a ranged shot using the ice shot piece.
+        <br><br>
+        When a character is struck by an ice shot, it does not take any damage
+        but is considered to be frozen. Place the ice shot piece on top of the
+        affected character piece. If multiple targets are hit by an ice shot the
+        player performing the shot decides which one will be frozen.
+        <br><br>
+        While frozen, a character cannot take any actions, does not take
+        damage and any of their defensive properties are suspended. They
+        must remain in place on the board with the ice shot piece placed on top
+        of them. A frozen character can only be freed when the ice shot piece
+        is knocked off by another shot, either directly or indirectly (the ice shot
+        piece is immediately removed from the board).
+        <br><br>
+        Heroes must be careful not to knock the ice shot piece off a frozen
+        monster. If all other monsters in a room are dead and any remain
+        frozen, the room is complete and the heroes move on to the Resolution
+        Phase. The player who froze a monster collects gold the same way they
+        would if it had been destroyed.
+        <br><br>
+        Catacomb Lords and Antients are not affected by the ice shot.
+
+    - name: Missile
+      pretext: >
+        For example, a missile shot indicates that a missile
+        piece is used instead of the character piece itself and
+        represents an arrow being fired or a spell being cast. A
+        missile shot piece is placed anywhere within 2.5cm (1”)
+        of the character and then shot across the board. 
+        <br><br>
+        It inflicts one point of damage if it hits a target and
+        is removed from the board when completed. 
+
+    - name: Shield
+      pretext: >
+        A shield shot functions identically to the missile shot, but a
+        shield piece is shot instead. This shot represents the character
+        pushing an enemy away with their shield and does no damage.
+        Directly after the character’s turn is finished (all other
+        shots in their shot sequence are completed), the shield piece
+        is repositioned to any legal location on the game board within
+        2.5cm (1”) of the shield’s owner to help protect them.
+        <br><br>
+        Shield pieces are removed from the board when their owner
+        dies or when the Battle Phase ends.
+
+    - name: Target
+      pretext: >
+        The target shot is a ranged shot that functions like a missile shot, but a player can shoot a second
+        time if the first shot misses. The target character must be declared prior to shooting the first shot (place the Target
+        token on that character). If a player misses the target character, a second shot may be attempted from the last legal
+        position where the first shot ended. The target shot inflicts one point of damage to the stated target only; damage to
+        other characters is ignored.
+        <br><br>
+        The Target token is then removed.
+
+- name: Shot Modifiers
+  children:
+    - name: Chain
+      pretext: >
+        The chain shot modifier indicates
+        that the same target cannot be
+        damaged consecutively in a shot sequence and does not
+        appear in combination with any other shot modifier. If the
+        same target is hit twice consecutively, damage that would
+        have been inflicted by the second hit is ignored.
+        <br><br>
+        For example, if Xoric the Barbarian plays the Berserker
+        Battle Axe Item card, he can perform four melee shots in
+        a row; however, they cannot damage the same monster
+        or Catacomb Lord consecutively. Therefore, the Barbarian
+        could hit a Zombie (destroying it), then hit a Troll (it is
+        damaged and flips over in place on the board), then hit a
+        Fire Spirit (destroying it) and then hit the same damaged
+        Troll again (finally destroying it).
+        <br><br>
+        By preventing damage being applied consecutively, the
+        chain shot modifier ensures that damage from a particular
+        shot sequence is distributed across several targets.
+        Ranged shots with the chain modifier always originate
+        from the location of the character performing them.
+
+    - name: Corrosion
+      pretext: >
+        If a hero is hit
+        with a corrosion shot modifier, one of their Item
+        cards is destroyed. The player shuffles the affected
+        hero’s Item cards. One Item card is drawn randomly and is
+        discarded from the game. Any pieces associated with it on
+        the board are removed. If the affected hero does not have
+        any items, then this modifier has no effect. 
+
+    - name: Critical
+      pretext: >
+        The critical
+        shot modifier increases the damage
+        inflicted by the base shot by one point
+
+    - name: Fear
+      pretext: >
+        The fear shot
+        modifier forces an affected character to
+        lose their courage and run away. The attacker who damages
+        a target with the fear shot modifier, may immediately
+        perform a single, unmodifiable rush shot with the affected
+        hero (including those that are stunned), ally, familiar or
+        monster piece. 
+
+    - name: Petrify
+      pretext: >
+        When a character
+        is hit with the petrify shot modifier, they are
+        turned to stone. The character is dead and are
+        removed from the board, no matter how much health they
+        have remaining. If multiple characters are hit, only one is
+        affected by the petrify shot modifier (all characters still
+        take damage). The player performing the shot decides
+        which one is turned to stone.
+
+    - name: Poison
+      pretext: >
+        Some monster attacks not
+        only result in loss of health
+        points, but are also poisonous. When a hero is hit by
+        a poison shot modifier, they first must decrease their
+        health by one point (if applicable). he appropriate number
+        of Poison cards are then drawn from the Poison deck
+        and placed face up on the affected hero’s player mat.
+        As they are damaged by poison shots, the Poison cards
+        accumulate.
+        <br><br>
+        If at any time, the total value of all the Poison cards
+        accumulated equals or exceeds the starting health of that
+        hero, then they are overwhelmed by the poison and die. 
+
+    - name: Regeneration
+      pretext: >
+        Regeneration is when health is stolen
+        from an enemy. The regeneration shot
+        modifier enables a character to restore one point of health
+        after successfully damaging an enemy. Only one point of
+        health is restored even if multiple targets are damaged.
+        A character can never exceed their maximum starting
+        health.
+        <br><br>
+        For example, a Troll that is already in the damaged state
+        successfully damages Elani the Thief with its regeneration
+        melee shot. The Thief suffers one point of damage and the
+        Troll’s piece is flipped back over to its normal state because
+        it has regained one point of health. Another example,
+        Varesh the Wizard has three health points. He plays a
+        Drain Energy Spell card and performs a missile shot with
+        the regeneration modifier against a Zombie. The Zombie is
+        destroyed (it lost one health point) and the Wizard’s health
+        is increased by one to four. The regeneration shot modifier
+        is ineffective against Antients and shadow monsters
+
+    - name: Stun
+      pretext: >
+        Shots with the stun modifier
+        leave the affected hero
+        temporarily able to only perform a single rush shot. Place
+        the Stunned! card over the affected hero’s Rules card. On
+        their turn, a player may only perform a single rush shot
+        with a stunned hero until that hero is hit directly by any
+        melee or rush shot from one of their teammates (including
+        another stunned hero). Remove the Stunned! card when
+        this happens.
+        <br><br>
+        When the Battle Phase for a room ends, all stunned
+        heroes return to normal and players remove all Stunned!
+        cards.
+        <br><br>
+        If a hero is stunned and has a familiar in play, 
+        the player controlling the hero can still perform
+        the familiar’s action.
+        However, in the case
+        of the Raven Familiar,
+        no spells can be cast
+        from its location while
+        its owner is stunned.
+        <br><br>
+        If only a single hero
+        is able to perform
+        their normal action(s)
+        during the Battle
+        Phase (the others may
+        be dead, devoured
+        or teleported), the
+        effects of the stun
+        modifier on
+        that hero are ignored.
+
+    - name: Transform
+      pretext: >
+        When a
+        monster with the transform shot modifier
+        inflicts damage, it transforms into the form
+        indicated below the shot sequence.
+        <br><br>
+        Only one monster can perform this type of modified
+        shot: the Fire Spirit. After the Overseer performs this shot
+        and damages one of the Heroic Forces, the Fire Spirit piece
+        is flipped over and becomes a fire wall. It remains in this
+        form for the remainder of the room and is treated like an
+        obstacle. Thus fire walls cannot be controlled further by
+        the Overseer and do not count as monsters in the room.
+        <br><br>
+        As a burning sphere of flame, it will inflict one health
+        point of damage to any of the Heroic Forces who come into
+        contact with it in any way: directly or indirectly. If a fire
+        wall is pushed off the board, return it to the point where
+        it departed as normal.
+
+- name: Shot Mitigation
+  children:
+    - name: Nullification
+      pretext: >
+        Some characters can nullify basic shots
+        which prevents any damage from being inflicted and any
+        shot modifiers taking effect (the modifiers are ignored).
+        For example, a Skeleton Warrior monster has a missile
+        shot icon in its Nullifies box. This means that it won’t suffer
+        any damage from any basic missile shot or any modified
+        missile shot (including the critical modifier). To destroy
+        the Skeleton Warrior, the heroes could use a melee shot
+        or fireball shot.
+        <br><br>
+        Marorg the Skeleton Explorer’s Hero Rule card has a
+        Nullifies box that contains poison melee, poison missile
+        and poison rush shot icons. Marorg is only protected
+        from being damaged (and therefore poisoned) by these
+        modified shots specifically. 
+
+    - name: Reflection
+      pretext: >
+        Reflected shots behave the
+        same as those that have been nullified with
+        the exception that one (and only one) point
+        of damage is reflected back at the attacker
+        initiating the shot. For example, the Minotaur
+        can reflect missile shots. If a player shoots
+        a missile shot against it, that missile shot is
+        nullified and one point of damage is reflected
+        back at the attacking hero.
+        <br><br>
+        When a Nullifies or Reflects box appears on an Antient
+        card, a Catacomb Lord Rules card, a Hero Rules card, a
+        Monster card or Item card with the frequency condition
+        of “permanent” (see page 18), no action is required on
+        the part of the player, as all shot icons in that box will be
+        nullified and/or reflected automatically.
+        <br><br>
+        When a Nullifies or Reflects box appears on an Ability
+        card or Item card with the “Once per room” frequency
+        condition, then the player affected by a given shot may
+        choose when to use the card to be protected from the shot
+        icons in the box. The card is flipped over and is refreshed
+        (flipped face up) during the Setup phase of the next room.
+        <br><br>
+        Finally when a Nullifies or Reflects box appears on a
+        Spell card or Item card with the “Once per game” frequency
+        condition, then the player affected by a given shot must
+        choose when to use the card to be protected from the shot
+        icons in the box, after which the card is discarded.
+
+    - name: Suppression
+      pretext: >
+        Suppression is a condition where a character is
+        prevented from performing a certain type of shot and/
+        or modifier in some rooms. This is expressed on a Room
+        card by the icons for the suppressed shots being listed
+        in a Suppresses box. If an unmodified shot is listed, that
+        means that shot type and all its modified versions are
+        suppressed for the duration of that room. For example,
+        if an unmodified missile shot is listed in the Suppresses
+        box, that means no missile shots modified or unmodified
+        can be performed by either the Heroic Forces or the
+        Overseer. Critical missile shot modifiers, chain missile
+        shot modifiers, poison missile shot modifiers, etc. are
+        all suppressed too. If a specific modified shot is listed,
+        only the modifier is suppressed, not the basic shot.
+        For example, if a stun missile
+        shot modifier is listed in the
+        Suppresses box only the stun
+        modifier is suppressed. This
+        would mean that the Overseer,
+        when controlling the Crypt
+        Spider monster, would treat it as
+        having unmodified missile shots
+        in its shot sequence as opposed
+        to those with the stun modifier.
+
+- name: Special Shots
+  children:
+    - name: Bite
+      pretext: >
+        When hit by a bite shot, one point of
+        damage is immediately inflicted as normal to any
+        affected targets. For all characters that remain alive,
+        the player chooses one and places a Bite Token on top
+        of it.
+        <br><br>
+        A character that has been bitten cannot take
+        any actions and can only be freed when the Bite
+        Token is knocked off by another shot, either directly
+        or indirectly. When this happens, the Bite Token is
+        immediately removed from the board.
+        <br><br>
+        A player must be careful not to knock the Bite Token
+        off accidentally, freeing an affected character. If at the end
+        of the next round the Bite Token has not been knocked
+        off, another point of health is deducted from the affected
+        target. One point of health is lost at the end of every
+        further round that the bite shot piece stays in place.
+        <br><br>
+        Stunned heroes are unaffected by the Bite shot.
+
+    - name: Devour
+      pretext: >
+        When hit by a devour shot,
+        the hero, ally or familiar immediately takes one point of
+        damage. If they are still alive, they are removed from the
+        board and placed on the Devoured! card. While fighting for
+        life in the monster’s stomach, a character that has been
+        devoured cannot take any actions and are considered to
+        be removed from the game.
+        <br><br>
+        All devoured characters are released once the room
+        is completed successfully or the monster is destroyed. In
+        the latter case, all characters are returned to the place
+        on the board where the monster was destroyed, ready to
+        take their turn as normal. If multiple characters are hit
+        by a devour shot, all take damage; however, only one is
+        devoured: the Overseer decides which one will be sent to
+        the Devoured! card.
+        <br><br>
+        Multiple characters
+        can be placed on the
+        Devoured! card at the
+        same time, but each one
+        has to be hit by a separate
+        devour shot.
+        <br><br>
+        When a character is
+        devoured, the effects of
+        the stun shot modifier and
+        the bite shot are cancelled.
+        Characters cannot
+        be teleported off the
+        Devoured! card.
+
+    - name: Open Portal
+      pretext: >
+        During the Battle Phase, a hero or Catacomb Lord
+        can open a Magic Portal to switch the positions of any
+        two characters on the board (including themselves).
+        <br><br>
+        This includes allies and familiars. Unlike teleportation,
+        no pieces leave the board, their positions (including any
+        conditions) are simply switched. For example, Elani the
+        Thief only has one point of health left and is surrounded by
+        monsters. Vysara the Sorceress (from the Cavern of Soloth
+        expansion) uses her Open Portal
+        Ability card to switch the position of
+        the Thief and Xoric the Barbarian. A
+        player may only switch the positions
+        of two of their own teammates: a
+        hero cannot change positions with
+        a monster and a Catacomb Lord
+        cannot change positions with a hero.
+
+    - name: Repeat
+      pretext: >
+        During the Battle Phase, when a monster or Catacomb Lord hits a monster with a
+        repeat shot, that monster may take another turn. 
+
+    - name: Roll
+      pretext: >
+        The roll shot is performed by
+        placing the character piece on its side,
+        and rolling it across the board. In order
+        to inflict damage, the rolling character
+        must make contact with an enemy
+        target when it comes to a complete stop,
+        either hitting or partially covering another piece. In the
+        latter case, ensure the character that performed the roll
+        shot finishes the shot laying flat in a legal location on the
+        board. If a rolling character leaves the board, simply place
+        it back on the edge of the board (laying flat) at the point
+        where it left as normal.
+        <br><br>
+        An unmodified roll shot does two points of damage. If
+        two characters are hit by a roll shot, only one is affected:
+        the player performing the shot decides which one.
+
+    - name: Runic Shift
+      pretext: >
+        The character performing a Runic
+        Shift (including Antients, Familiars,
+        and Wyverns) is picked up from their
+        current location and moved to any
+        unoccupied Rune Location icon on
+        the game board. Afterwards, execute
+        a Melee shot with that character.
+
+    - name: Summon
+      pretext: >
+        Summon shots enable new characters to
+        be brought into play during the Battle Phase. A summon
+        shot is performed in the same way as other ranged shot
+        except that the character piece (for example, a monster or
+        Antient) specified in the shot sequence of the summoning
+        character is used instead.
+        <br><br>
+        This initial shot represents the summoning process and
+        is treated like a standard ranged shot that inflicts one point
+        of damage (regardless of any other shots the character
+        being summoned may have in its shot sequence).
+        <br><br>
+        After the character performing the summon shot has
+        completed its full sequence, the summoned character can
+        be controlled as normal.
+        <br><br>
+        In the case of monsters specifically, the monster piece
+        being summoned must be available from the Monster Pool.
+
+    - name: Teleport
+      pretext: >
+        During the Battle Phase, a
+        character can be teleported,
+        enabling them to be removed
+        from the game board and
+        then returned to a different
+        location on their next turn.
+        <br><br>
+        A character will execute
+        a teleport as part of a shot
+        sequence and the target
+        character being teleported
+        will have its piece removed
+        from the board and placed
+        on the Teleported! card.
+        <br><br>
+        During the next round
+        of the Battle Phase, the
+        teleported character must
+        come back into play. The
+        player places its piece
+        anywhere along the edge
+        of the game board and
+        performs a single melee
+        shot. This melee shot can be
+        followed with a post-Combo
+        item, if desired. This is
+        the end of the teleported
+        character’s turn during that round of the Battle Phase.
+        For example, Varesh the Wizard
+        uses the Teleport Hero Spell card to
+        leave the board. His wooden piece
+        is placed on the Teleported! card. In
+        the next round, he is returned to the
+        edge of the game board and performs
+        a single melee shot.
+        <br><br>
+        While on the Teleported! card,
+        a character cannot be damaged or
+        killed.
+        <br><br>
+        The act of teleporting helps characters recover from
+        being stunned, bitten and frozen: bite and ice shot pieces are
+        immediately removed. If all other heroes are dead and one
+        remains on the Teleported! card, that hero may teleport
+        back onto the board and continue fighting.
+        <br><br>
+        The same is true for monsters and Catacomb Lords. This
+        implies that the Battle Phase continues while monsters
+        and/or Catacomb Lords are on the Teleported! card and
+        none remain on the board itself.
+        <br><br>
+        A character who is stunned, bitten or frozen cannot
+        teleport themselves. However, they can be teleported by
+        another character. A character must be teleported back
+        into play on their next turn.
+        <br><br>
+        No combat occurs between any monsters and heroes
+        that are on the Teleported! card at the same time.
+
+- name: Template Shots
+  pretext: >
+    When using the Short, Long, and Spread templates, place
+    the end with the black circle over the top of the character
+    using it. A template may be positioned in any direction
+    across the game board and away from the character. Once
+    the player has fixed the direction of the template, then they
+    check to see if any opposing characters are covered by it,
+    either partially or completely. Damage and the effects of
+    any modifiers are then applied to all affected characters.
+    <br><br>
+    Characters that are on the same team are unaffected by
+    templates, as per normal rules related to friendly fire.
+
+  children:
+    - name: Short
+      pretext: >
+        This template has no special rules.
+
+    - name: Long
+      pretext: >
+        For the Long template, only characters that are partially
+        or completely covered from the curved dotted line to the
+        end of the template are affected.
+
+    - name: Spread
+      pretext: >
+        This template has no special rules.
+
+    - name: Ring
+      pretext: >
+        The Ring template does not have a black circle and
+        simply affects all targets covered by it (again partially or
+        completely).
+
+- name: Monster Health
+  children:
+    - name: Normal
+      pretext: >
+        Creatures with no special health modifier simply take damage and get destroyed when it reaches 0.
+
+    - name: Shadow
+      pretext: >
+        Shadow monsters (such as the Phantom) emerge from
+        the Shadow Realm, the space between the board and walls.
+        Instead of a solid blood health drop icon on their Monster
+        cards, they have a dotted one as shown to the right.
+        <br><br>
+        In order to be destroyed, shadow
+        monsters must be pushed completely off
+        the game board by any direct shot (rush,
+        melee or a ranged shot) from the heroic
+        forces.
+
+    - name: Invulnerable
+      pretext: >
+        Antients are invulnerable, and cannot be damaged, destroyed, or afflicted with any status effects.
+
+    - name: Reanimation
+      pretext: >
+        The Shambling Mound monster
+        cannot be permanently destroyed by
+        the Heroic Forces. When killed, it is
+        immediately placed on the back edge of
+        the Monster Start Zone by the Overseer.
+        Shambling Mounds do not count as monsters for the
+        purposes of determining when a room is complete.
+
+- name: Monster Families
+  children:
+    - name: Dungeon (Green)
+      pretext: >
+        Dungeon monsters are vulnerable to missile
+        shots: treat any unmodified missile shot from the heroic
+        forces that strikes a member of the dungeon family as
+        having the critical modifier.
+
+    - name: Infernal (Orange)
+      pretext: >
+        Infernal monsters are vulnerable to the ice
+        shot with their health being reduced by one extra point in
+        addition to being frozen (if they remain alive).
+
+    - name: Mythological (Blue)
+      pretext: >
+        Mythological monsters are vulnerable in hand-to-hand combat. Treat any unmodified melee shot from
+        the heroic forces as having the regeneration modifier.
+
+    - name: Undead (Gray)
+      pretext: >
+        Undead monsters are vulnerable to the fireball
+        shot: treat any unmodified fireball shot from the heroic
+        forces as having the critical modifier. In addition, undead
+        monsters are vulnerable to fire walls and fire obstacles
+        (from the Cavern of Soloth expansion), taking one point
+        of damage when hitting them or being pushed into them.
+
+    - name: Vermin (Beige)
+      pretext: >
+        Vermin monsters that are extra small in size
+        (Sewer Rats, Armoured Beetles, Pit Vipers, Vampire Bats)
+        are susceptible to fear: treat any unmodified melee or
+        missile shot from the heroic forces as having the fear
+        modifier, unless the target monster itself has a shot with
+        the fear modifier in its sequence (the Blood Skull).
+
+- name: Special Rooms
+  children:
+    - name: Alewife Tavern
+      pretext: >
+        At the Alewife Tavern, players can test their luck to win items, regain health or be cured of poison. The Overseer
+        places all the Orcs, Fire Spirits, Centaurs and four hero pieces in an opaque bag. To place a bet, a player must pay two
+        gold coins. They pull three pieces from the bag and consult the following table of rewards from top to bottom to see if
+        they have won.
+        <br><br>
+        3 Heroes - Gain full health for the chosen hero and their ally (if he or she has
+        one) OR cure all Poison cards assigned to one hero.
+        <br><br>
+        3 of a kind - Take an Item card of your choice from the item deck.
+        <br><br>
+        2 Hero pieces - Blindly draw 1 Item card (player must take first item they can use).
+        <br><br>
+        3 different coloured pieces - Gain 1 health point OR cure 1 Poison card.
+        <br><br>
+        1 Hero piece - Gain 1 gold coin from the Treasury.
+        <br><br>
+        Replace the pieces in the bag before placing another wager. Each player
+        can bet as many times as they like, as long as they have sufficient gold to do
+        so. Players may pool their gold in order to place a wager. Players indicate
+        which hero is gambling for each wager and only that hero wins any rewards
+        which are paid out and applied immediately. Winning players may choose a
+        reward that is lower on the table than the one they qualified for. All gold lost
+        by the heroes is returned to the Treasury. 
+
+    - name: Altar of Soloth
+      pretext: >
+        The Altar of Soloth is a new Special
+        Room card that can be added to the Room
+        card layout before the Catacomb Lord’s
+        Lair card. When the heroes arrive at the
+        Altar, they may choose to pay five gold
+        coins (one Hero may pay or they may pool
+        their gold). The Overseer shuffles the deck
+        of Item cards and flips over the top card.
+        As a group, the heroes decide if they want
+        to accept that item. If they do, they must
+        assign the Item card to one Hero. If the
+        group does not want, or cannot use that
+        item, it is returned to the bottom of the
+        deck. They may pay another five gold coins
+        to make another offering and flip over the
+        next Item card.
+
+    - name: Althea the Healer
+      pretext: >
+        Althea the Healer offers rest and relief to the heroes. She will
+        cure one Poison card for free. As a group, the players decide which
+        hero will be able to discard a Poison card and shuffle it into the
+        Poison card deck.
+        <br><br>
+        She also enables the heroes to obtain the following services in
+        exchange for an offering:
+        <br><br>
+        1. Heal Hero or Ally (3 Coins) - One health point is restored to the hero or ally. Move the Hero or Ally
+        Tracker up the health track on the hero’s player mat by one blood drop.
+        <br><br>
+        2. Cure Poison (2 Coins) - A hero is cured of one Poison card.
+        <br><br>
+        3. Resurrect Hero (10 Coins) - One dead hero is brought back to life with two health points. The hero
+        returns to life with all of his or her gold coins and any unused Item and/or
+        Spell cards. They may pay to be healed further by the Healer.
+        The resurrected hero starts playing in the next room.
+        <br><br>
+        Multiple services can be purchased from the Healer. Players may pool their gold coins in order to make offerings
+        for her services. Allies can be healed by the Healer, but not resurrected.
+
+    - name: Amaranth Inn
+      pretext: >
+        The Amaranth Inn allows heroes to meet and recruit an
+        ally to help them. When the heroes arrive at the Inn, any
+        hero that is not being used in the game may be recruited
+        as an ally at a cost of ten gold coins. To do so, place all the
+        unused Hero Portrait cards face down and shuffle them
+        together. Randomly draw one card: this is the ally that
+        may be recruited. If the players choose to proceed, they
+        may pool their gold to pay the required fee to the Treasury.
+        <br><br>
+        One player will control the ally and
+        assign it to assist one of the heroes he or
+        she controls. Place the Portrait and Rules
+        cards beside the appropriate hero player
+        mat. Unless otherwise stated on their
+        Rules card, allies have a maximum health
+        of four. Use the Ally Tracker to record the
+        health on the hero’s main health track.
+        <br><br>
+        Allies use the shot sequence printed on their Hero
+        Rules card as normal. The following rules also apply:
+        <br><br>
+        Ability Cards: Allies start with one less of their total
+        Ability cards (minimum one). The player recruiting the ally
+        chooses which Ability card(s) the ally will use.
+        <br><br>
+        Item Cards: Allies cannot buy or use Item cards.
+        <br><br>
+        Spell Cards: Spell Casters may take any two Spell cards
+        of their choice.
+        <br><br>
+        For example, Oleira the Elf starts with two Elven Arrow
+        Ability cards as a hero. When she is recruited as an ally,
+        she will only start with one of these cards (one less Ability
+        card, minimum one) and may not use the Spirit Familiar
+        item.
+        <br><br>
+        A second example: Varesh the Wizard starts with one
+        Fireball Ability card as a hero and may choose ten Spell
+        cards. When recruited as an ally, he may use his Ability
+        card, but may choose only two Spell cards.
+        During the Setup Phase, an ally is placed in the Hero
+        Start Zone along with the other heroes. The player who
+        recruited the ally takes a turn for both the hero and ally
+        during each round in any order. Allies function much the
+        same way as heroes: they can be teleported and devoured.
+        <br><br>
+        They can damage and destroy monsters and Catacomb
+        Lords. When they lose all their health points, they die and
+        are removed from the game. However, there are significant
+        differences between a hero and an ally. Allies cannot buy or
+        use items, use spells, be stunned, poisoned or resurrected.
+        They cannot earn gold for destroying monsters: all gold
+        transfers to the hero whom the ally was assigned to assist.
+        <br><br>
+        If a hero dies and their ally is still on the board, control
+        of the ally passes to the hero with the lowest current health
+        (regardless of maximum starting health). If two heroes are
+        tied for lowest health, the hero who has the least gold of
+        the two will get the ally. If there is still a tie, the hero with
+        the fewest items gets the ally. 
+
+    - name: Catacomb Lord's Lair
+      pretext: >
+        When the heroes arrive at the Catacomb Lord’s Lair Special Room card during the
+        Exploration Phase, their final battle of the game starts. The Overseer controls the
+        Catacomb Lord and its squad of minions.
+
+    - name: Izchak the Merchant
+      pretext: >
+        When the heroes arrive at Izchak the Merchant during
+        the Exploration Phase, they may use their gold to buy
+        items to aid them in their quest. The Overseer shuffles the
+        deck of Item cards and flips over six cards for the players
+        to examine. These items are available for purchase or the
+        players can pay two gold coins to see the next card on
+        the top of the Item card deck. There is no limit as to how
+        many times they may do this. Any player can purchase any
+        number of the revealed Item cards provided they meet the
+        requirements. Players may pool their gold coins to assist in
+        the purchase of items. When an item has been purchased,
+        the gold coins are returned to the Treasury. The Item card
+        is assigned to the hero by placing it in the designated area
+        on the hero’s player mat.
+
+        As an additional service, a map may be purchased from
+        the Merchant by any hero for two gold coins. When the
+        map is paid for, all
+        the Room cards
+        in the catacomb
+        are flipped over,
+        thus revealing the
+        path leading to the
+        Catacomb Lord. 
+
+    - name: Shaurath
+      pretext: >
+        When searching the ruins of the Shaurath crypt, the heroes discover
+        items to aid them in their quest. Shuffle the deck of item cards and
+        draw two. The players controlling the heroes decide which two
+        members of the party will use each item (normal restrictions apply).
+
+    - name: Secret Spring
+      pretext: >
+        The heroes find their way to the Secret Spring whose
+        cold, clear waters offer recuperation and healing. 
+        <br><br>
+        Shuffle the four Spring Tokens and place them face down
+        on the Secret Spring Room card. Each player draws a Spring
+        Token and does either of the following:
+        <br><br>
+        1. Takes the full amount of health indicated on the Spring
+        Token, adjusting the hero’s health track accordingly.
+        <br><br>
+        2. Keeps the Spring Token and discards it during the
+        Setup Phase of any subsequent Battle Room. When used
+        this way, some of the Spring’s potency will have diminished
+        and therefore only half the value of the Spring Token may
+        be converted (rounded down).
+        <br><br>
+        Only the hero that owns the Spring Token may use it. The
+        hero’s health may not exceed its starting level.
+
+    - name: Wyvern Nest
+      pretext: >
+        While making their way through a mountain pass, the
+        heroes discover a giant nest with Wyvern eggs that are
+        ready to hatch. In fact, one of them already has! 
+        <br><br>
+        Three players take an Egg Token each. The fourth player
+        takes the Wyvern Familiar Item card and disc. If the Wyvern
+        Familiar is already in play, the player controlling it does not
+        receive an Egg Token.
+        <br><br>
+        During any subsequent Battle Phase,
+        a player may hatch a Wyvern instead of
+        taking their hero’s normal action. The
+        player discards an Egg Token, chooses
+        any available Wyvern from the Wyvern
+        Aviary, and performs the following
+        sequence with their hero:
+        <br><br>
+        (rush > summon wyvern > rush)
+        <br><br>
+        When the Egg shot ranged disc from Catacombs &
+        Castles is available, the player may choose the following
+        sequence instead:
+        <br><br>
+        (rush > egg > rush)
+        <br><br>
+        The Wyvern is placed on the game board as normal and
+        persists for the remainder of the room.

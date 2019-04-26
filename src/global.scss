@@ -1,0 +1,142 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import "theme/print.scss";
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/montserrat-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('/assets/fonts/montserrat-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/montserrat-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/montserrat-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/montserrat-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/montserrat-v13-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+* {
+  font-family: "Montserrat", serif;
+}
+
+ion-toolbar, ion-content{
+  --background: url("/assets/background.png") repeat;
+}
+
+ion-router-outlet {
+  background: url("/assets/background.png") repeat;
+}
+
+ion-list {
+  background: transparent !important;
+  padding-top: 0 !important;
+}
+
+ion-item, a[href], img[href] {
+  cursor: pointer;
+}
+
+a[href] > img {
+  pointer-events: none;
+}
+
+.inline-icon {
+  max-height: 16px;
+  max-width: 16px;
+}
+
+.romanized-list {
+  list-style-position: outside;
+  list-style-type: none;
+
+  @media (max-width: 576px) {
+    padding-left: 20px;
+  }
+
+  li {
+    position: relative;
+
+    counter-increment: romanizedsub;
+  }
+
+  li::before {
+    content: counters(romanizedsub, "", upper-roman);
+
+    position: absolute;
+    left: -40px;
+    top: 3px;
+
+    font-size: 12px;
+
+    @media (max-width: 576px) {
+      left: -20px;
+    }
+  }
+}
+
+.alphabeta-list {
+  list-style-position: outside;
+  list-style-type: none;
+
+  @media (max-width: 576px) {
+    padding-left: 20px;
+  }
+
+  li {
+    position: relative;
+
+    counter-increment: alphabetasub;
+  }
+
+  li::before {
+    content: counters(alphabetasub, "", upper-alpha);
+
+    position: absolute;
+    left: -40px;
+    top: 3px;
+
+    font-size: 10px;
+
+    @media (max-width: 576px) {
+      left: -20px;
+    }
+  }
+}
+
+.sublist {
+  margin-top: 10px;
+}
+
+.emph {
+  font-variant: small-caps;
+}
+
+.error {
+  color: #f00;
+  font-weight: bold;
+}
+
+mark {
+  background-color: #bc4424;
+  color: #fff;
+}
+
+a:not(.rule-link) {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--ion-color-primary);
+  }
+}
